@@ -5,8 +5,7 @@ import ac.za.cput.adp3.xyzcongolmerate.util.Helper;
 
 public class OrganisationFactory {
 
-    private static final String SUFFIX = Helper.getSuffixFromClassName(OrganisationFactory.class); // Expecting OF from (O)rganisation(F)actory.
-
+    private static final String SUFFIX = Helper.getSuffixFromClassName(OrganisationFactory.class);
     public static Organisation buildOrganisation(String organisationName) {
         return new Organisation.Builder()
                 .orgName(organisationName)
